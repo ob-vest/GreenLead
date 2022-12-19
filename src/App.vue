@@ -1,11 +1,10 @@
 <script setup>
 import DescriptionBlock from "./components/DescriptionBlock.vue";
+import NavBar from "./components/NavBar.vue";
 </script>
 
 <template>
-  <!-- <div>
-    <img class="" src="./assets/background.webp" alt="" />
-  </div> -->
-
+  <NavBar />
+  <img src="../public/background.webp" alt="" />
   <DescriptionBlock image-url="background.webp" />
 </template>
