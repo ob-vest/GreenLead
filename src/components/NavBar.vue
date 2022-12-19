@@ -15,7 +15,9 @@
           </svg>
         </button>
       </div>
-      <div class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto">
+      <div
+        class="w-full hidden flex-grow lg:flex lg:items-end lg:w-auto flex-col-reverse"
+      >
         <div class="text-sm lg:flex-grow">
           <a
             href="#responsive-header"
