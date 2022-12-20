@@ -3,6 +3,7 @@ import "./style.css";
 import { createRouter, createWebHashHistory } from "vue-router";
 import ServicesPage from "./components/ServicesPage.vue";
 import ServiceDescription from "./components/ServiceDescription.vue";
+import AboutPage from "./components/AboutUsPage.vue";
 import Homepage from "./components/Homepage.vue";
 import App from "./App.vue";
 
@@ -17,6 +18,7 @@ const router = createRouter({
       component: ServiceDescription,
       props: true,
     },
+    { path: "/about", name: "About", component: AboutPage },
   ],
 });
 
