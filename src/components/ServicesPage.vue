@@ -8,7 +8,6 @@
           name: 'Service',
           params: {
             service: items[0].title,
-            description: items[0].description,
           },
         }"
         service="items[0].title"
