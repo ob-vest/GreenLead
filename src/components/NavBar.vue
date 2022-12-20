@@ -19,30 +19,30 @@
         class="w-full hidden flex-grow lg:flex lg:items-end lg:w-auto flex-col-reverse"
       >
         <div class="text-sm lg:flex-grow">
-          <a
-            href="#responsive-header"
+          <router-link
+            to="/services"
+            tag="button"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
+            >Services</router-link
           >
-            Services
-          </a>
-          <a
-            href="#responsive-header"
+          <router-link
+            to="/"
+            tag="button"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
+            >Workshop</router-link
           >
-            Workshop
-          </a>
-          <a
-            href="#responsive-header"
+          <router-link
+            to="/"
+            tag="button"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
+            >Cases</router-link
           >
-            Cases
-          </a>
-          <a
-            href="#responsive-header"
-            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white"
+          <router-link
+            to="/"
+            tag="button"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
+            >Om Os</router-link
           >
-            Om Os
-          </a>
         </div>
       </div>
       <!-- MOBILE NAV BAR -->
