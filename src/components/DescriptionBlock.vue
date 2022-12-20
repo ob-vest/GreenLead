@@ -1,18 +1,30 @@
-<script setup>
-defineProps({
-  imageUrl: String,
-});
+<script>
+import TitleWithUnderline from "./TitleWithUnderline.vue";
+export default {
+  components: { TitleWithUnderline },
+  props: {
+    reverseOrder: Boolean,
+    title: String,
+    imageUrl: String,
+  },
+  computed: {
+    setOrder: function () {
+      return this.reverseOrder == true ? "md:flex-row-reverse" : "md:flex-row";
+    },
+  },
+};
 </script>
 
 <template>
   <section
     class="flex flex-col md:flex-row m-5 md:m-20 justify-center items-center md:items-start"
+    :class="setOrder"
   >
     <aside class="mb-5 md:mr-5">
       <img class="w-80 h-52 object-cover rounded-lg" :src="imageUrl" alt="" />
     </aside>
     <div class="md:w-1/2">
-      <h1 class="text-center underline text-3xl mb-3">What we do</h1>
+      <TitleWithUnderline :title="title" />
       <p>
         GreenLead is a company that specializes in making green visions a
         reality, partly in cooperation with investors and also in cooperation

@@ -1,6 +1,9 @@
-<script setup>
+<script>
 import DescriptionBlock from "./DescriptionBlock.vue";
 import GetInTouchButton from "./GetInTouchButton.vue";
+export default {
+  components: { DescriptionBlock, GetInTouchButton },
+};
 </script>
 
 <template>
@@ -15,5 +18,19 @@ import GetInTouchButton from "./GetInTouchButton.vue";
     <GetInTouchButton />
   </div>
 
-  <DescriptionBlock image-url="background.webp" />
+  <DescriptionBlock
+    :reverseOrder="false"
+    title="Hvad vi laver"
+    image-url="background.webp"
+  />
+  <DescriptionBlock
+    :reverseOrder="true"
+    title="Hvem det er for"
+    image-url="background.webp"
+  />
+  <DescriptionBlock
+    :reverseOrder="false"
+    title="Proces og resultater"
+    image-url="background.webp"
+  />
 </template>
