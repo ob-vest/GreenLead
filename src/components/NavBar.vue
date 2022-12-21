@@ -27,25 +27,25 @@
           <router-link
             to="/services"
             tag="button"
-            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-primary mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-primary mr-4 hover:animate-pulse"
             >Services</router-link
           >
           <router-link
             to="/workshop"
             tag="button"
-            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-primary mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-primary mr-4 hover:animate-pulse"
             >Workshop</router-link
           >
           <router-link
             to="/"
             tag="button"
-            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-primary mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-primary mr-4 hover:animate-pulse"
             >Cases</router-link
           >
           <router-link
             to="/about"
             tag="button"
-            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-primary mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-primary mr-4 hover:animate-pulse"
             >Om Os</router-link
           >
         </div>
