@@ -13,7 +13,8 @@
       <source :src="videoUrl" type="video/mp4" />
     </video>
     <div class="mx-3 flex flex-col max-w-2xl">
-      <h1 class="text-center mb-3">{{ title }}</h1>
+      <TitleWithUnderline :title="title" />
+      <!-- <h1 class="text-center mb-3">{{ title }}</h1> -->
       <p class="text-gray-400 text-sm">
         {{ description }}
       </p>
@@ -21,7 +22,9 @@
   </div>
 </template>
 <script>
+import TitleWithUnderline from "./TitleWithUnderline.vue";
 export default {
+  components: { TitleWithUnderline },
   props: {
     reverseOrder: Boolean,
     videoUrl: String,

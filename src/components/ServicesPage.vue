@@ -1,6 +1,6 @@
 <template lang="">
   <div class="flex flex-col justify-center items-center">
-    <h1 class="my-10">Løsninger og services</h1>
+    <TitleWithUnderline class="mb-10" title="Løsninger og services" />
 
     <div class="grid md:grid-cols-2 gap-10">
       <router-link
@@ -62,7 +62,7 @@ Grønland er på mange måder som Klondike var i 1896 før the Gold rush - fyldt
       />
     </div>
 
-    <h1 class="mt-10">Så du ikke hvad du ledte efter?</h1>
+    <h1 class="mt-10 font-bold">Fandt du ikke hvad du ledte efter?</h1>
     <GetInTouchButton />
   </div>
 </template>
@@ -70,8 +70,9 @@ Grønland er på mange måder som Klondike var i 1896 før the Gold rush - fyldt
 <script>
 import ServiceCard from "./ServiceCard.vue";
 import GetInTouchButton from "./GetInTouchButton.vue";
+import TitleWithUnderline from "./TitleWithUnderline.vue";
 export default {
-  components: { ServiceCard, GetInTouchButton },
+  components: { ServiceCard, GetInTouchButton, TitleWithUnderline },
   data() {
     return {
       items: [

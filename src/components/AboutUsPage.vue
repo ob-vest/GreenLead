@@ -1,6 +1,6 @@
 <template lang="">
   <div class="flex flex-col justify-center text-center">
-    <h1>Hvem er GreenLead</h1>
+    <TitleWithUnderline title="Hvem er GreenLead" />
     <p class="text-left mt-10">
       GreenLead er et rådgivningshus med erhvervskonsulenter, med erfaring med
       grøn omstilling, teknologier som vandkraft, sol og vind, projektudvikling,
@@ -22,9 +22,10 @@
   </div>
 </template>
 <script>
+import TitleWithUnderline from "./TitleWithUnderline.vue";
 import AboutUsPortrait from "./AboutUsPortrait.vue";
 export default {
-  components: { AboutUsPortrait },
+  components: { AboutUsPortrait, TitleWithUnderline },
 };
 </script>
 <style lang=""></style>
