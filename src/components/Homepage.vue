@@ -15,7 +15,11 @@ export default {
         <h1>Vi mindsker besværet med</h1>
         <div class="relative mx-2 w-32 md:w-40">
           <h1 class="w-16">forandringer</h1>
-          <img class="absolute -top-6 -left-4" src="circledrawing.svg" alt="" />
+          <img
+            class="absolute -top-6 -left-4"
+            src="/circledrawing.svg"
+            alt=""
+          />
         </div>
       </div>
 
